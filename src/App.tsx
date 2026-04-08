@@ -5,8 +5,8 @@ import {
 } from "lucide-react";
 
 export default function App() {
-  // Puxando a imagem diretamente do seu repositório no GitHub para o preview funcionar
-  const userPhoto = "https://raw.githubusercontent.com/OzaelSantana/Portf-lio---Ozael-Santana/main/public/Profile.jpg"; 
+  // Agora que você subiu o arquivo, usamos a versão local para evitar que suma do GitHub
+  const userPhoto = "/Profile.jpg"; 
 
   const navItems = [
     { name: "Sobre", href: "#sobre" },
