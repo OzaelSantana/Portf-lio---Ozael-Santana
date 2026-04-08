@@ -3,11 +3,11 @@ import {
   ArrowRight, Mail, Phone, MapPin, Linkedin, 
   Home, Code2, Briefcase, FolderOpen, User 
 } from "lucide-react";
+import userPhoto from "./Profile.jpg";
 
 export default function App() {
-  // Agora que você subiu o arquivo, usamos a versão local para evitar que suma do GitHub
-  const userPhoto = "/Profile.jpg"; 
-
+  // Importamos a foto diretamente para que o Vite gerencie o build corretamente
+  
   const navItems = [
     { name: "Sobre", href: "#sobre" },
     { name: "Habilidades", href: "#habilidades" },
