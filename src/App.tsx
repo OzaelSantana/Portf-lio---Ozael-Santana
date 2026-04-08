@@ -2,8 +2,8 @@ import { motion } from "motion/react";
 import { ArrowRight, Mail, Phone, MapPin, Linkedin } from "lucide-react";
 
 export default function App() {
-  // O site agora está configurado para buscar a imagem "profile.jpg" na pasta "public"
-  const userPhoto = "/profile.jpg"; 
+  // Puxando a imagem diretamente do seu repositório no GitHub!
+  const userPhoto = "https://raw.githubusercontent.com/OzaelSantana/Portf-lio---Ozael-Santana/main/public/Profile.jpg"; 
 
   return (
     <div className="min-h-screen bg-black text-white selection:bg-white selection:text-black">
