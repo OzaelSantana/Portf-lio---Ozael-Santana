@@ -18,7 +18,7 @@ export default function App() {
   return (
     <div className="min-h-screen bg-black text-white selection:bg-white selection:text-black scroll-smooth">
       {/* Navbar */}
-      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-20 py-6 bg-black/50 backdrop-blur-md border-bottom border-white/5">
+      <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 md:px-20 py-4 bg-black/50 backdrop-blur-md border-bottom border-white/5">
         <div className="font-serif text-xl font-bold tracking-tighter">
           &lt;OS/&gt;
         </div>
@@ -68,13 +68,13 @@ export default function App() {
       </div>
 
       {/* Hero Section */}
-      <section id="hero" className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-32 pb-20 relative overflow-hidden">
-        <div className="max-w-7xl w-full flex flex-col md:flex-row items-center justify-between gap-12">
-          <div className="flex-1 z-10 text-left max-w-2xl">
+      <section id="hero" className="min-h-screen flex items-center justify-center px-6 md:px-20 pt-20 pb-12 relative overflow-hidden">
+        <div className="max-w-6xl w-full flex flex-col md:flex-row items-center justify-center gap-12 md:gap-24">
+          <div className="flex-1 z-10 text-left max-w-xl">
             <motion.div 
               initial={{ opacity: 0, x: -20 }}
               animate={{ opacity: 1, x: 0 }}
-              className="flex items-center gap-2 mb-6"
+              className="flex items-center gap-2 mb-4"
             >
               <div className="w-2 h-2 rounded-full bg-green-500 animate-pulse"></div>
               <span className="text-xs uppercase tracking-widest text-white/50">Disponível para novos projetos</span>
@@ -85,7 +85,7 @@ export default function App() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
               whileHover={{ scale: 1.02, x: 10 }}
-              className="font-serif text-6xl md:text-8xl leading-tight mb-8 cursor-default transition-all duration-500 hover:text-blue-400"
+              className="font-serif text-4xl md:text-6xl leading-tight mb-6 cursor-default transition-all duration-500 hover:text-blue-400"
             >
               Eu transformo <span className="text-blue-500">dados</span> em inteligência estratégica.
             </motion.h1>
@@ -95,20 +95,20 @@ export default function App() {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.3 }}
               whileHover={{ scale: 1.01, color: "#ffffff" }}
-              className="text-lg md:text-xl text-white/60 mb-10 max-w-xl leading-relaxed transition-all duration-300 cursor-default"
+              className="text-lg md:text-xl text-white/60 mb-6 max-w-xl leading-relaxed transition-all duration-300 cursor-default"
             >
               Analista de Dados especializado em automação, BI e sistemas de qualidade. 
               Ajudando empresas a otimizar processos e tomar decisões baseadas em evidências.
             </motion.p>
 
-            <div className="flex flex-wrap gap-4 mb-16">
+            <div className="flex flex-wrap gap-4 mb-8">
               <motion.a 
                 href="https://wa.me/5571987615043"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-medium flex items-center gap-2 transition-all"
+                className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-full font-medium flex items-center gap-2 transition-all"
               >
                 <Phone className="w-4 h-4" />
                 Agendar Conversa
@@ -119,13 +119,13 @@ export default function App() {
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                className="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-full font-medium transition-all border border-white/10"
+                className="bg-white/10 hover:bg-white/20 text-white px-8 py-3 rounded-full font-medium transition-all border border-white/10"
               >
                 Ver LinkedIn
               </motion.a>
             </div>
 
-            <div className="flex gap-12">
+            <div className="flex gap-8">
               <div>
                 <p className="text-2xl font-bold text-blue-500">8+</p>
                 <p className="text-xs uppercase tracking-widest text-white/40">Anos de Experiência</p>
@@ -156,15 +156,15 @@ export default function App() {
       </section>
 
       {/* About Section */}
-      <section id="sobre" className="min-h-screen flex items-center justify-center px-6 md:px-20 py-20 bg-black">
-        <div className="max-w-7xl w-full flex flex-col md:flex-row-reverse items-center justify-between gap-12">
-          <div className="flex-1 z-10 md:pl-20">
+      <section id="sobre" className="min-h-screen flex items-center justify-center px-6 md:px-20 py-16 bg-black">
+        <div className="max-w-6xl w-full flex flex-col md:flex-row-reverse items-center justify-center gap-12 md:gap-24">
+          <div className="flex-1 z-10 md:pl-12">
             <motion.h2 
               whileInView={{ opacity: 1, y: 0 }}
               initial={{ opacity: 0, y: 20 }}
               viewport={{ once: true }}
               whileHover={{ scale: 1.02, x: 10 }}
-              className="font-serif text-5xl md:text-7xl mb-12 transition-all duration-500 cursor-default hover:text-blue-400"
+              className="font-serif text-4xl md:text-5xl mb-8 transition-all duration-500 cursor-default hover:text-blue-400"
             >
               Quem é o Ozael?
             </motion.h2>
@@ -200,17 +200,17 @@ export default function App() {
       </section>
 
       {/* Projects/Skills Section */}
-      <section id="expertise" className="py-32 px-6 md:px-20 flex justify-center">
-        <div className="max-w-7xl w-full">
+      <section id="expertise" className="py-16 px-6 md:px-20 flex justify-center">
+        <div className="max-w-6xl w-full">
           <motion.h2 
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             viewport={{ once: true }}
-            className="font-serif text-5xl md:text-7xl mb-20"
+            className="font-serif text-4xl md:text-5xl mb-12"
           >
             Minha Expertise
           </motion.h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
                 title: "Data Science & BI",
@@ -236,7 +236,7 @@ export default function App() {
                 transition={{ delay: i * 0.2 }}
                 className="group"
               >
-                <div className="arch-frame overflow-hidden aspect-[4/5] mb-6 bg-white/5">
+                <div className="arch-frame overflow-hidden aspect-[3/4] mb-4 bg-white/5">
                   <img 
                     src={item.img} 
                     alt={item.title} 
@@ -247,8 +247,8 @@ export default function App() {
                 <div className="flex items-start gap-3">
                   <ArrowRight className="w-5 h-5 mt-1 rotate-45 opacity-50" />
                   <div>
-                    <h3 className="text-xl font-medium mb-2">{item.title}</h3>
-                    <p className="text-white/50 text-sm leading-relaxed">{item.desc}</p>
+                    <h3 className="text-lg font-medium mb-1">{item.title}</h3>
+                    <p className="text-white/50 text-xs leading-relaxed">{item.desc}</p>
                   </div>
                 </div>
               </motion.div>

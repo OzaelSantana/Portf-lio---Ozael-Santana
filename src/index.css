@@ -22,8 +22,8 @@
 }
 
 .oval-photo {
-  width: 320px;
-  height: 320px;
+  width: 280px;
+  height: 280px;
   border-radius: 50%;
   overflow: hidden;
   background: #d9cbb8;
