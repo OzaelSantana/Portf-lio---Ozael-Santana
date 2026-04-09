@@ -24,13 +24,14 @@ export default function App() {
         </div>
         <div className="hidden md:flex items-center gap-8">
           {navItems.map((item) => (
-            <a 
+            <motion.a 
               key={item.name} 
               href={item.href} 
-              className="text-sm uppercase tracking-widest text-white/60 hover:text-white transition-colors"
+              whileHover={{ scale: 1.1, color: "#3b82f6" }}
+              className="text-sm uppercase tracking-widest text-white/60 hover:text-white transition-all duration-300"
             >
               {item.name}
-            </a>
+            </motion.a>
           ))}
           <a 
             href="https://wa.me/5571987615043" 
@@ -142,7 +143,7 @@ export default function App() {
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ delay: 0.2, duration: 1 }}
-              whileHover={{ scale: 1.03 }}
+              whileHover={{ scale: 1.15 }}
               className="oval-photo transition-transform duration-500"
             >
               <img 
@@ -206,7 +207,8 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             viewport={{ once: true }}
-            className="font-serif text-4xl md:text-5xl mb-12"
+            whileHover={{ scale: 1.02, x: 10 }}
+            className="font-serif text-4xl md:text-5xl mb-12 transition-all duration-500 cursor-default hover:text-blue-400"
           >
             Minha Expertise
           </motion.h2>
@@ -264,7 +266,8 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             viewport={{ once: true }}
-            className="font-serif text-5xl md:text-7xl mb-20"
+            whileHover={{ scale: 1.02, x: 10 }}
+            className="font-serif text-5xl md:text-7xl mb-20 transition-all duration-500 cursor-default hover:text-blue-400"
           >
             Habilidades & <br /> Ferramentas
           </motion.h2>
@@ -329,7 +332,8 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             viewport={{ once: true }}
-            className="font-serif text-5xl md:text-7xl mb-20"
+            whileHover={{ scale: 1.02, x: 10 }}
+            className="font-serif text-5xl md:text-7xl mb-20 transition-all duration-500 cursor-default hover:text-blue-400"
           >
             Minha Trajetória
           </motion.h2>
@@ -345,6 +349,7 @@ export default function App() {
                   { title: "MBA em Data Science e Big Data", sub: "Faculdade Facuminas" },
                   { title: "Gestão da Produção e Qualidade", sub: "Faculdade Facuminas" },
                   { title: "Certificação Black Belt", sub: "Pós-graduação" },
+                  { title: "Gestão de Pessoas e RH", sub: "Formação Complementar" },
                   { title: "Bacharelado em Administração", sub: "Universidade do Estado da Bahia" }
                 ].map((edu, i) => (
                   <motion.li 
@@ -369,7 +374,8 @@ export default function App() {
                   { role: "Analista de Dados", company: "Grupo VitalMed", period: "Dez/2025 - Atual" },
                   { role: "Supervisor de Qualidade", company: "R2 Telecomunicações", period: "2025" },
                   { role: "Analista de Planejamento (PCP)", company: "R2 Telecomunicações", period: "2023 - 2025" },
-                  { role: "Analista de Qualidade", company: "R2 Telecomunicações", period: "2023" }
+                  { role: "Analista de Qualidade", company: "R2 Telecomunicações", period: "2023" },
+                  { role: "Auxiliar Administrativo", company: "Experiência Anterior", period: "2019 - 2023" }
                 ].map((exp, i) => (
                   <motion.li 
                     key={i} 
@@ -420,7 +426,8 @@ export default function App() {
             whileInView={{ opacity: 1, y: 0 }}
             initial={{ opacity: 0, y: 20 }}
             viewport={{ once: true }}
-            className="font-serif text-6xl md:text-8xl mb-24"
+            whileHover={{ scale: 1.02, x: 10 }}
+            className="font-serif text-6xl md:text-8xl mb-24 transition-all duration-500 cursor-default hover:text-blue-400"
           >
             Entre em <br /> contato
           </motion.h2>
