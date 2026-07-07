@@ -442,9 +442,9 @@ export default function App() {
             </div>
             <div>
               <p className="text-white/40 text-sm uppercase tracking-widest mb-4">E-mail</p>
-              <a href="mailto:ozaelsantana@gmail.com" className="flex items-center gap-2 hover:text-white/70 transition-colors">
+              <a href="mailto:ozael.profissional@gmail.com" className="flex items-center gap-2 hover:text-white/70 transition-colors">
                 <Mail className="w-4 h-4 opacity-50" />
-                ozaelsantana@gmail.com
+                ozael.profissional@gmail.com
               </a>
             </div>
             <div>
